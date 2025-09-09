@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shut the Box</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <h1>Shut the Box</h1>
+    <p class="subtitle">Rules</p>
+  </header>
+
+  <main class="container">
+    <section class="board" aria-label="Tiles 1 to 9">
+      <button class="tile" data-value="1">1</button>
+      <button class="tile" data-value="2">2</button>
+      <button class="tile" data-value="3">3</button>
+      <button class="tile" data-value="4">4</button>
+      <button class="tile" data-value="5">5</button>
+      <button class="tile" data-value="6">6</button>
+      <button class="tile" data-value="7">7</button>
+      <button class="tile" data-value="8">8</button>
+      <button class="tile" data-value="9">9</button>
+    </section>
+
+    <section class="controls">
+      <div class="dice-area">
+        <div class="dice" id="die1" aria-label="Die 1">-</div>
+        <div class="dice" id="die2" aria-label="Die 2">-</div>
+        <div class="sum" id="sum">Sum: 0</div>
+      </div>
+
+      <div class="actions">
+        <button id="rollBtn" class="primary">Roll Dice</button>
+        <button id="submitMoveBtn" class="success" disabled>Flip Selected</button>
+        <button id="resetSelectionBtn" class="secondary" disabled>Clear Selection</button>
+        <button id="newGameBtn" class="ghost">New Game</button>
+      </div>
+
+      <div class="options">
+        <label><input type="checkbox" id="singleTileOnly"> Single tile per roll (variant)</label>
+      </div>
+    </section>
+
+    <section class="status">
+      <div id="message" role="status">Welcome! Click Roll to start.</div>
+      <div id="score">Score: 45</div>
+    </section>
+  </main>
+
+  <section class="rules">
+    <h2>How to Play</h2>
+    <ul>
+      <li>Roll two dice and flip tiles that sum to the total.</li>
+      <li>When 7, 8, and 9 are shut, you may roll one die.</li>
+      <li>If no combination matches the total, the game ends. Score is sum of open tiles.</li>
+      <li>Shut all tiles to win with a perfect score of 0.</li>
+    </ul>
+  </section>
+
+  <footer class="footer">© 2025 Shut the Box</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

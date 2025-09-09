@@ -1,0 +1,70 @@
+:root {
+  --bg: #0b1117;
+  --panel: #0f1722;
+  --text: #e6edf3;
+  --muted: #9fb0c0;
+  --accent: #53b3ff;
+  --accent-2: #7dd3fc;
+  --border: #1f2a37;
+  --success: #22c55e;
+  --warn: #f59e0b;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.header { text-align: center; padding: 20px 16px; }
+.subtitle { color: var(--muted); margin-top: 4px; }
+
+.container { max-width: 920px; margin: 0 auto; padding: 16px; }
+
+.board { display: grid; grid-template-columns: repeat(9, 1fr); gap: 10px; margin-bottom: 16px; }
+.tile {
+  padding: 14px 0;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--panel);
+  color: var(--text);
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.05s ease, background 0.2s ease, color 0.2s ease;
+}
+.tile:hover { transform: translateY(-1px); }
+.tile.selected { outline: 2px solid var(--accent); color: var(--accent-2); }
+.tile.closed { background: #0a1a0f; color: #5bdc8b; border-color: #134e2b; }
+.tile:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.controls { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 8px; }
+.dice-area { display: flex; align-items: center; gap: 12px; }
+.dice { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 8px; background: var(--panel); border: 1px solid var(--border); font-weight: 700; }
+.sum { color: var(--muted); }
+
+.actions { display: flex; flex-wrap: wrap; gap: 8px; }
+button { padding: 10px 14px; border-radius: 8px; border: 1px solid var(--border); background: var(--panel); color: var(--text); cursor: pointer; }
+button.primary { background: var(--accent); color: #001525; border-color: #2e9be9; }
+button.success { background: var(--success); color: #052911; border-color: #16a34a; }
+button.secondary { background: transparent; }
+button.ghost { background: transparent; }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.options { color: var(--muted); }
+
+.status { display: flex; align-items: center; justify-content: space-between; gap: 12px; border-top: 1px solid var(--border); margin-top: 8px; padding-top: 12px; }
+#message { color: var(--muted); }
+#score { font-weight: 700; }
+
+.rules { max-width: 920px; margin: 0 auto; padding: 8px 16px 32px; color: var(--muted); }
+.footer { text-align: center; color: var(--muted); padding: 16px; border-top: 1px solid var(--border); }
+
+@media (max-width: 640px) {
+  .board { grid-template-columns: repeat(3, 1fr); }
+}
+
+

@@ -1,0 +1,42 @@
+Shut the Box - Game Instructions
+
+Objective:
+The goal of Shut the Box is to cover (or "shut") as many numbered tiles as possible by rolling dice and flipping tiles that add up to the dice total. The fewer points left uncovered, the better your score.
+
+Setup:
+1. The game consists of tiles numbered 1 through 9.
+2. All tiles start in the "up" position (uncovered).
+3. Two dice are used in the game.
+
+Gameplay:
+1. On your turn, roll both dice.
+2. Add up the dice total.
+3. Flip down one or more tiles that add up to the dice total. 
+   - Example: If you roll a 9, you can flip down "9" OR "4 and 5" OR "1, 2, and 6".
+4. Continue rolling as long as there are tiles available that can match your dice total.
+5. If you cannot match the dice total with the remaining tiles, your turn ends.
+
+Special Rule:
+- If the numbers 7, 8, and 9 are already shut, you may roll with a single die instead of two.
+
+Scoring:
+- If you manage to shut all tiles, you "Shut the Box" and immediately win with a perfect score of 0.
+- Otherwise, your score is the sum of the tiles left uncovered at the end of your turn.
+
+Game End:
+- In single-player, the game ends when you cannot make a move. Lower score = better.
+- In multiplayer, each player takes turns. After everyone plays, the lowest total score wins.
+
+Variations:
+- Some versions allow only a single tile flip per roll.
+- Others allow multiple players to play in rounds and keep cumulative scores.
+
+Tips:
+- Try to shut high numbers early, since they are harder to combine later.
+- Think strategically about combinations to maximize your chances of continuing.
+
+
+
+
+
+
